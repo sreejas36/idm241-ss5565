@@ -37,7 +37,7 @@ body {
     display: grid;
     margin: 10px;
     /* justify-content: center; */
-    /* align-items: ; */
+    align-items: left;
 }
 
 .content-box {
