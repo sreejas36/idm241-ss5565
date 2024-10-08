@@ -18,12 +18,12 @@
 body {
     color: #FFFFFF;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    align-items: center;
 }
 .category{
     background-color: var(--navy);
     border: 10px solid #004D99;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: grid;
     margin: 10px;
     justify-content: center;
