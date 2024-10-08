@@ -32,14 +32,22 @@ body {
 
 .category{
     background-color: var(--navy);
-    border: 10px solid #004D99;
+    border: 5px solid #004D99;
     border-radius: 20px;
     display: grid;
     margin: 10px;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: ; */
 }
 
+.content-box {
+    padding:25px;
+    border: 2px;
+    border-color: var(--light-black);
+    background-color: var(--light-black);
+    margin: 20px;
+    border-radius: 15px;
+}
 header{
     color: #CC0000;
     align-items: center;
@@ -60,6 +68,7 @@ h2 {
 h3 {
     background-color: #004D99;
     color: #FFFFFF;
+    align-items: center;
 }
 
 img {
