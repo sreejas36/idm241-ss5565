@@ -74,7 +74,9 @@ img {
 }
 
 .container{
-    padding: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
 }
 
 .link {
@@ -84,10 +86,6 @@ li{
     margin: auto;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-}
 
 @media (max-width: 768px) {
     .container{
