@@ -88,6 +88,9 @@ img {
 li{
     margin: auto;
 }
+ul{
+    padding: 2px;
+}
 
 
 @media (max-width: 768px) {
