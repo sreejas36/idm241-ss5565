@@ -27,7 +27,6 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .category{
@@ -36,7 +35,6 @@ body {
     border-radius: 20px;
     display: grid;
     margin: 10px;
-    /* justify-content: center; */
     align-items: left;
 }
 
