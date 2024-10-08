@@ -80,8 +80,9 @@ img {
 .link {
     color: #CC0000;
 }
-
-/*media queries*/
+li{
+    margin: auto;
+}
 
 .container{
     display: grid;
@@ -93,37 +94,3 @@ img {
         grid-template-columns: 1fr;
     }
 }
-
-
-/* @media (width <= 1024px) {
-    .description div{
-        width: 40%;
-    }
-}
-
-@media (width <= 700px) {
-    header{
-        background-color: #14181C;
-        display: flex;
-        flex-direction: column;
-    }
-    header img{
-        height: 75px;
-        margin: 0 10px;
-    }
-    h1{
-        font-family: Sharp Grotesk, Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        color: #FFFFFF;
-        text-align: center;
-        margin: 15px;
-    }
-
-    video{
-        width: 90%;
-    }
-
-    .description div{
-        width: 70%;
-    }
-} */
