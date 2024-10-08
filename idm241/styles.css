@@ -23,7 +23,6 @@ body {
 .category{
     background-color: var(--navy);
     border: 10px solid #004D99;
-    padding: 3%;
     border-radius: 20px;
     display: grid;
     margin: 10px;
