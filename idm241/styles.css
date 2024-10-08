@@ -24,11 +24,10 @@
 body {
     color: var(--white);
     font-family: var(--montserrat);
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--black);
 }
 
 .category{
