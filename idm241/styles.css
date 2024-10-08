@@ -62,6 +62,10 @@ h3 {
     color: #FFFFFF;
 }
 
+img {
+    align-items: center;
+}
+
 .container{
     padding: 10px;
 }
