@@ -24,7 +24,7 @@
 body {
     color: var(--white);
     font-family: var(--montserrat);
-    display: grid;
+    /* display: grid; */
     justify-content: center;
     align-items: center;
 }
