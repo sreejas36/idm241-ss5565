@@ -83,6 +83,11 @@ img {
     grid-template-columns: repeat(2, 2fr);
 }
 
+.info{
+    text-align: center;
+}
+
+
 .link {
     color: #CC0000;
 }
