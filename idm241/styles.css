@@ -33,7 +33,7 @@ body {
     background-color: var(--navy);
     border: 5px solid #004D99;
     border-radius: 20px;
-    display: grid;
+    /* display: grid; */
     margin: 10px;
     align-items: left;
     padding: 30px;
