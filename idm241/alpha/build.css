@@ -172,24 +172,58 @@ li{
     font-weight: 300;
     font-size: medium;
     border: 2px solid #004D99;
+    gap: 10px;
 }
 
 .add:hover {
-    background-color: white; /* Change background to white */
-    color:#004D99; /* Change text to green */
-    border: 2px solid #004D99; /* Optional: add a border for better visibility */
+    background-color: white;
+    color:#004D99; 
+    border: 2px solid #004D99;
+    cursor: not-allowed;
 }
 
-.add:hover .icon {
+.add:hover .cart {
     fill: #004D99;
     content: url('assets/blue-cart.svg');
     width: 30px;
     height: 30px;
 }
 
-.icon {
+.add:disabled {
+    background-color: #FFFFFF;
+    color: #004D99;
+    cursor: not-allowed;
+}
+
+.adding {
+    background-color: #FFFFFF;
+    color: #004D99;
+}
+
+.added {
+    background-color: #FFFFFF;
+    color: #128737;
+    border-color: #128737;
+}
+
+
+.cart{
     width: 30px;
     height: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the spin animation when the loading icon is shown */
+.adding #icon {
+    animation: spin 1s linear infinite;
 }
 
 .build h4 {
