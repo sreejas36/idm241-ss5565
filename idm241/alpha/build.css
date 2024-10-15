@@ -95,6 +95,9 @@ img {
 li{
     margin: auto;
 }
+.build {
+    justify-content: center;
+}
 
 .card {
     border-color: #000000;
@@ -118,6 +121,7 @@ li{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+
     /* transition: color 0.3s ease; */
 }
 
