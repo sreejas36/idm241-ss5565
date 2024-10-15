@@ -3,6 +3,9 @@ const icon = document.getElementById('icon');
 const buttonText = document.getElementById('buttonText');
 
 addButton.addEventListener('click', function() {
+    // Disable hover effect
+    addButton.classList.add('no-hover');
+
     // Change to "Adding" state
     addButton.classList.add('adding');
     buttonText.textContent = 'Adding...';
@@ -12,18 +15,48 @@ addButton.addEventListener('click', function() {
     setTimeout(function() {
         // Change to "Added" state
         addButton.classList.remove('adding');
-        addButton.classList.add('added');
         buttonText.textContent = 'Added';
         icon.src = 'assets/check.svg'; // Change to checkmark icon
 
         // After 3 seconds, revert back to "Add" state
         setTimeout(function() {
-            addButton.classList.remove('added');
+            addButton.classList.remove('no-hover'); // Enable hover again
             buttonText.textContent = 'Add';
             icon.src = 'assets/cart.svg'; // Revert to cart icon
         }, 3000);
     }, 2000);
 });
+
+
+
+
+
+// const addButton = document.getElementById('addButton');
+// const icon = document.getElementById('icon');
+// const buttonText = document.getElementById('buttonText');
+
+// addButton.addEventListener('click', function() {
+//     // Change to "Adding" state
+//     addButton.classList.add('adding');
+//     buttonText.textContent = 'Adding...';
+//     icon.src = 'assets/loading.svg'; // Change to loading icon
+
+//     // Simulate a delay of 2 seconds for "Adding" state
+//     setTimeout(function() {
+//         // Change to "Added" state
+//         addButton.classList.remove('adding');
+//         addButton.classList.add('added');
+//         buttonText.textContent = 'Added';
+//         icon.src = 'assets/checkmark.svg'; // Change to checkmark icon
+
+//         // After 3 seconds, revert back to "Add" state
+//         setTimeout(function() {
+//             addButton.classList.remove('added');
+//             buttonText.textContent = 'Add';
+//             icon.src = 'assets/cart.svg'; // Revert to cart icon
+//         }, 3000);
+//     }, 2000);
+// });
 
 
 console.log()

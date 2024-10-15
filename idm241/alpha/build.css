@@ -179,7 +179,6 @@ li{
     background-color: white;
     color:#004D99; 
     border: 2px solid #004D99;
-    cursor: not-allowed;
 }
 
 .add:hover .cart {
@@ -195,9 +194,17 @@ li{
     cursor: not-allowed;
 }
 
+.no-hover {
+    pointer-events: none; /* Disable pointer events */
+    background-color: #FFFFFF;
+    color: #128737;
+    border-color: #128737;
+}
+
 .adding {
     background-color: #FFFFFF;
     color: #004D99;
+    border-color: #004D99;
 }
 
 .added {
