@@ -130,12 +130,15 @@ li{
 
 .build h5 {
     color: #666666;
+    margin: 10px 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .title {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .title:hover {
@@ -144,30 +147,58 @@ li{
 
 .reviews {
     display: flex;
-    flex-direction: row;
-    height: ;
-    .stars {
-        width: ;
-    }
+    align-items: center; 
+    /* justify-content: center; */
+
+}
+.stars {
+    width: 110px;
+    height: 25px;
 }
 
-.add{
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.add {
     background-color: #004D99;
+    color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    font-weight: 300;
+    font-size: medium;
+    border: 2px solid #004D99;
+}
+
+.add:hover {
+    background-color: white; /* Change background to white */
+    color:#004D99; /* Change text to green */
+    border: 2px solid #004D99; /* Optional: add a border for better visibility */
+}
+
+.add:hover img.icon {
+    /* filter: invert(1); Invert the icon colors */
+    color: #FFFFFF;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
 
 .build h4 {
     /* text-decoration: underline; */
 }
-h4 {
-    color: #000000;
-}
+/* .add h3 {
+    color: #FFFFFF;
+    font-weight: 300;
+} */
 
 h5 {
     color: #000000;
-}
-
-.reviews {
-    justify-content: center;
 }
 
 @media (max-width: 667px) {
