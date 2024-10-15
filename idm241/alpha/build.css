@@ -205,6 +205,7 @@ li{
     background-color: #FFFFFF;
     color: #004D99;
     border-color: #004D99;
+    cursor: not-allowed;
 }
 
 .added {
