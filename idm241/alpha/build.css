@@ -159,6 +159,7 @@ li{
 .button {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .add {
@@ -179,9 +180,11 @@ li{
     border: 2px solid #004D99; /* Optional: add a border for better visibility */
 }
 
-.add:hover img.icon {
-    /* filter: invert(1); Invert the icon colors */
-    color: #FFFFFF;
+.add:hover .icon {
+    fill: #004D99;
+    content: url('assets/blue-cart.svg');
+    width: 30px;
+    height: 30px;
 }
 
 .icon {
@@ -190,12 +193,8 @@ li{
 }
 
 .build h4 {
-    /* text-decoration: underline; */
+    padding: 0%;
 }
-/* .add h3 {
-    color: #FFFFFF;
-    font-weight: 300;
-} */
 
 h5 {
     color: #000000;
