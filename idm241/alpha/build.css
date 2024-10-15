@@ -96,20 +96,31 @@ li{
     margin: auto;
 }
 .build {
+    display: flex;
     justify-content: center;
 }
 
 .card {
     border-color: #000000;
-    width: 300px;
-    height: 600px;
+    width: 200px;
+    height: 400px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
     margin: 0 10px;
+}
+
+.pumpkin {
+    margin: auto;
+    width: 147px;
+    height: auto;
 }
 
 .build h1, .build h2, .build h3, .build h4 {
@@ -117,20 +128,35 @@ li{
     color: #000000;
 }
 
+.build h5 {
+    color: #666666;
+}
 .title {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-
-    /* transition: color 0.3s ease; */
+    font-weight: bold;
 }
 
 .title:hover {
     text-decoration: underline;
 }
 
+.reviews {
+    display: flex;
+    flex-direction: row;
+    height: ;
+    .stars {
+        width: ;
+    }
+}
+
+.add{
+    background-color: #004D99;
+}
+
 .build h4 {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 h4 {
     color: #000000;
