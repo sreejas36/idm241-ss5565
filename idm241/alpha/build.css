@@ -98,13 +98,13 @@ li{
 .build {
     display: flex;
     justify-content: center;
-
+    padding: 30px;
 }
 
 .card {
     border-color: #000000;
     width: 200px;
-    height: 400px;
+    height: 380px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -178,8 +178,14 @@ li{
 
 .add:hover {
     background-color: white;
-    color:#004D99; 
-    border: 2px solid #004D99;
+    color:#004d99; 
+    border: 2px solid rgba(0, 77, 153, 1);
+}
+
+.add:mouse-down {
+    background-color: white;
+    color:rgba(0, 77, 153, 0.5); 
+    border: 2px solid rgba(0, 77, 153, 0.5);
 }
 
 .add:hover .cart {
@@ -256,3 +262,12 @@ h5 {
         width: 80vw
     }
 } 
+
+/* @media (min-width: 668px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    video {
+        width: 80vw
+    }
+}  */
