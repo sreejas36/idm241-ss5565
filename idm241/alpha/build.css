@@ -190,7 +190,7 @@ li{
 
 .add:hover .cart {
     fill: #004D99;
-    content: url('assets/blue-cart.svg');
+    content: url('/assets/blue-cart.svg');
     width: 30px;
     height: 30px;
 }
