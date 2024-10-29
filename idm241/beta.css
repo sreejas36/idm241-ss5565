@@ -141,15 +141,15 @@ li{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .images {
+    .visuals {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 } 
 
 @media (max-width: 1220px) {
-    .images {
-        /* display: grid; */
+    .visuals {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
