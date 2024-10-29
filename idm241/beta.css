@@ -136,7 +136,7 @@ li{
 
 
 
-@media (min-width: 667px) {
+@media (max-width: 667px) {
     .container{
         display: grid;
         grid-template-columns: 1fr;
