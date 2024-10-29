@@ -22,7 +22,7 @@
         <div class="category">
             <h3>TRIGGERS</h3>
             <ul class="info">
-                <li>Add Button Counter - Default</li>
+                <li>Add Button Container</li>
                     <ul>
                         <li>Hover ON</li>
                         <li>Hover OFF</li>
@@ -45,7 +45,7 @@
         <div class="category">
             <h3>RULES</h3>
             <ul class="info">
-                <li>Add Button Counter - Default</li>
+                <li>Add Button Container</li>
                     <ul>
                         <li>Hover ON</li>
                             <ul>
@@ -73,6 +73,12 @@
                         <li>Click ON</li>
                             <ul>
                                 <li>Item is added; cart database changes to n plus 1</li>
+                                <li>Item quantity increases by 1</li>
+                                <li>If item quantity is greater than 1</li>
+                                    <ul>
+                                        <li>Minus button goes back to 100% opacity</li>
+                                        <li>Item Quantity appears; Cart and Add Text disappears</li>
+                                    </ul>
                                 <li>Minus button goes back to 100% opacity</li>
                             </ul>
                     </ul>
@@ -89,7 +95,12 @@
                         <li>Click ON</li>
                             <ul>
                                 <li>Item is removed; cart database changes to n minus 1</li>
-                                <li>Minus button goes back to 60% opacity if item number is less than 1 </li>
+                                <li>Item quantity decreases by 1</li>
+                                <li>If item quantity is less than 1</li>
+                                    <ul>
+                                        <li>Minus button goes back to 60% opacity</li>
+                                        <li>Item Quantity disappears; Cart and Add Text reappears</li>
+                                    </ul>
                             </ul>
                     </ul>
             </ul>
@@ -98,7 +109,7 @@
         <div class="category">
             <h3>FEEDBACK</h3>
             <ul class="info">
-                <li>Add Button Counter - Default</li>
+                <li>Add Button Container</li>
                     <ul>
                         <li>Hover ON</li>
                             <ul>
@@ -125,7 +136,12 @@
                             </ul>
                         <li>Click ON</li>
                             <ul>
-                                <li>Item number increases by 1</li>
+                                <li>Item quantity increases by 1</li>
+                                <li>If item quantity is greater than 1</li>
+                                    <ul>
+                                        <li>Minus button goes back to 100% opacity</li>
+                                        <li>Item Quantity appears; Cart and Add Text disappears</li>
+                                    </ul>
                                 <li>Minus button goes back to 100% opacity</li>
                             </ul>
                     </ul>
@@ -141,8 +157,13 @@
                             </ul>
                         <li>Click ON</li>
                             <ul>
-                                <li>Item number decreases by 1</li>
-                                <li>Minus button goes back to 60% opacity if item number is less than 1 </li>
+                                <li>Item is removed; cart database changes to n minus 1</li>
+                                <li>Item quantity decreases by 1</li>
+                                <li>If item quantity is less than 1</li>
+                                    <ul>
+                                        <li>Minus button goes back to 60% opacity</li>
+                                        <li>Item Quantity disappears; Cart and Add Text reappears</li>
+                                    </ul>
                             </ul>
                     </ul>
             </ul>
@@ -168,7 +189,7 @@
     <section>
         <div class="visuals">
             <div class="images">
-                <h3>1. Add Button Before Hover</h3>
+                <h3>1. Add Button ContainerBefore Hover</h3>
                 <img src="/assets/add_button-default.png" alt="add button default">
             </div>
             <div class="images">
