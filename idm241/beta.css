@@ -141,7 +141,7 @@ li{
         grid-template-columns: 1fr;
     }
     .images {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
     }
 } 
 
