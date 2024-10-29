@@ -87,8 +87,8 @@ img {
 }
 
 .images h3{
-    font-size: 50px;
-    background-color: #FFFFFF;
+    font-size: 20px;
+    background-color: var(--navy);
 }
 
 .container{
