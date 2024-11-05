@@ -154,7 +154,7 @@ li{
     margin: 30px;
 }
 
-.pumpkin {
+.corrector {
     margin: auto;
     width: 147px;
     height: auto;
@@ -191,7 +191,52 @@ li{
 .stars {
     width: 110px;
     height: 25px;
+    text-align: center;
 }
+/* General button group styling */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--navy);
+}
+
+/* Button styles */
+.button {
+    background-color: var(--navy);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Quantity display with cart icon and add text */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+/* Disabled state styles */
+.button:disabled .icon {
+    color: #ccc; /* Gray out the icon when disabled */
+    cursor: default;
+}
+
+/* Hide cart icon and add text when quantity > 0 */
+.quantity.filled .cart-icon,
+.quantity.filled .add-text {
+    display: none;
+}
+
 
 .button {
     display: flex;
