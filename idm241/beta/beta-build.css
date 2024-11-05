@@ -197,7 +197,11 @@ li{
 .button-group {
     display: flex;
     align-items: center;
-    gap: 10px;
+    width: 1;
+    gap: 5px;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 20px;
     background-color: var(--navy);
 }
 
@@ -214,7 +218,6 @@ li{
 .icon {
     width: 20px;
     height: 20px;
-    fill: currentColor;
 }
 
 /* Quantity display with cart icon and add text */
