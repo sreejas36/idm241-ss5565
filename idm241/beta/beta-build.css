@@ -198,7 +198,7 @@ li{
 .button-group {
     display: flex;
     justify-self: center;
-    inline-size: max-content;
+    /* inline-size: max-content; */
     gap: 10px;
     padding: 10px 15px;
     margin: 10px;
