@@ -140,7 +140,7 @@ li{
 .card {
     border-color: #000000;
     width: 200px;
-    height: 320px;
+    height: 380px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -198,9 +198,9 @@ li{
 .button-group {
     display: flex;
     justify-self: center;
-    /* inline-size: max-content; */
+    inline-size: max-content;
     gap: 10px;
-    padding: 10px 15px;
+    padding: 0 15px;
     margin: 10px;
     border-radius: 15px;
     background-color: var(--navy);
