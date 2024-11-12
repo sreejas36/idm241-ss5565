@@ -85,7 +85,7 @@ img {
     margin-top: 30px;
 } */
 
-.visuals {
+.visual-container {
     display: grid;
 }    
 .images {
