@@ -76,15 +76,18 @@ h3 {
 img {
     align-items: center;
 }
-
+/* 
 .visuals {
     display: grid;
     grid-gap: 45px;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     margin-top: 30px;
-}
+} */
 
+.images {
+    max-width: 80%;
+}
 
 .visuals h3{
     font-size: 20px;
