@@ -75,7 +75,6 @@ h3 {
 
 img {
     align-items: center;
-    font-weight: 70%;
 }
 /* 
 .visuals {
@@ -89,7 +88,6 @@ img {
 .visual-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
 }    
 .images {
     max-width: 80%;
