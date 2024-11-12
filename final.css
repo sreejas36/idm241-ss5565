@@ -100,7 +100,7 @@ img {
 }
 
 .container{
-    padding: 5px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
