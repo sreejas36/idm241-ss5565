@@ -89,8 +89,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }    
-.images {
-    max-width: 80%;
+.images img{
+    max-width: 200%;
 }
 
 .visuals h3{
