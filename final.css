@@ -85,6 +85,9 @@ img {
     margin-top: 30px;
 } */
 
+.visuals {
+    display: grid;
+}    
 .images {
     max-width: 80%;
 }
