@@ -194,11 +194,23 @@ li{
     height: 25px;
     text-align: center;
 }
-
+/* 
 .button-group {
     display: flex;
     justify-self: center;
     inline-size: max-content;
+    width: 130px;
+    gap: 10px;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: var(--navy);
+} */
+
+.button-group {
+    display: flex;
+    justify-self: center;
+    width: 130px; /* Set a fixed width */
     gap: 10px;
     padding: 0 15px;
     margin: 10px;
@@ -222,11 +234,20 @@ li{
 }
 
 /* Quantity display with cart icon and add text */
-.quantity {
+/* .quantity {
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 16px;
+} */
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    gap: 5px;
+    font-size: 16px;
+    flex: 1; /* Ensure it takes up available space */
 }
 
 /* Disabled state styles */
@@ -241,6 +262,9 @@ li{
     display: none;
 }
 
+/* .quantity.filled{
+    padding: 0 50px;
+} */
 
 .button {
     display: flex;
