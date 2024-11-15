@@ -210,12 +210,12 @@ li{
 .button-group {
     display: flex;
     justify-self: center;
-    width: 130px; /* Set a fixed width */
     gap: 10px;
     padding: 0 15px;
     margin: 10px;
     border-radius: 15px;
     background-color: var(--navy);
+    width: 130px; /* Set a fixed width to avoid jumping */
 }
 
 /* Button styles */
@@ -241,13 +241,21 @@ li{
     font-size: 16px;
 } */
 
-.quantity {
+/* .quantity {
     display: flex;
     align-items: center;
     justify-content: center; /* Center content */
-    gap: 5px;
-    font-size: 16px;
-    flex: 1; /* Ensure it takes up available space */
+    /* gap: 5px; */
+    /* font-size: 16px; */
+    /* flex: 1; Ensure it takes up available space */
+
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust this to match the width needed */
+    text-align: center;
 }
 
 /* Disabled state styles */
