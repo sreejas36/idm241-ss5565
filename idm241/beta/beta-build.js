@@ -20,6 +20,10 @@ minusButton.addEventListener('click', () => {
     }
 });
 
+minusButton.disabled = true;
+minusButton.classList.add('disabled'); // Add class for greyed-out styling
+
+
 function updateQuantityDisplay() {
     const quantityElement = document.getElementById('itemQuantity');
     const addText = quantityElement.querySelector('.add-text');
