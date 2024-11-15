@@ -270,6 +270,10 @@ li{
     display: none;
 }
 
+
+#minusButton{
+    color: #ccc;
+}
 /* .quantity.filled{
     padding: 0 50px;
 } */

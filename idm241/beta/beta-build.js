@@ -1,6 +1,10 @@
 const plusButton = document.getElementById('plusButton');
 const minusButton = document.getElementById('minusButton');
-const itemQuantityDisplay = document.getElementById('itemQuantity');
+const itemQuantityDisplay = document.getElementById
+
+
+
+('itemQuantity');
 
 let itemQuantity = 0;
 
@@ -33,3 +37,4 @@ function updateQuantityDisplay() {
     minusButton.disabled = itemQuantity === 0;
     minusButton.querySelector('.icon').style.opacity = itemQuantity === 0 ? 0.4 : 1;
 }
+
