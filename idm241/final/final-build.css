@@ -19,8 +19,11 @@ body {
 
 .circle-container {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
 .circle {
     width: 30px;
     height: 30px;
@@ -31,6 +34,70 @@ body {
     transition: border-color 0.3s ease;
 }
 
+.circle:hover {
+    border-color: #000;
+}
+
+.circle-inner {
+    width: 80%;
+    height: 80%;
+    background-color: #f2e8e4; /* Default color (Light Beige) */
+    border-radius: 50%;
+    margin: 10%;
+    transition: background-color 0.3s ease;
+}
+
+.circle[data-color="1"] .circle-inner {
+    background-color: #f2e8e4; /* Light Beige */
+}
+
+.circle[data-color="2"] .circle-inner {
+    background-color: #ead8a1; /* Warm Yellow */
+}
+
+.circle[data-color="3"] .circle-inner {
+    background-color: #d8dcc0; /* Soft Green */
+}
+
+.circle[data-color="4"] .circle-inner {
+    background-color: #d6aa8b; /* Earthy Brown */
+}
+
+.checkmark {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.circle.selected .checkmark {
+    opacity: 1;
+}
+
+#selected-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#selected-image.shown {
+    transform: scale(1.1);
+}
+
+/* end of circles */
 
 .category{
     background-color: var(--navy);
@@ -155,8 +222,8 @@ li{
 
 .card {
     border-color: #000000;
-    width: 200px;
-    height: 380px;
+    width: 250px;
+    height: 450px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
