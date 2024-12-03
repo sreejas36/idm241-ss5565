@@ -1,0 +1,77 @@
+:root {
+    --white: #FFFFFF;
+    --navy: #004D99;
+    --red: #CC0000;
+    --black: #000000;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--montserrat);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 200px;
+    height: 380px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin: 30px;
+    padding: 15px;
+}
+
+.corrector {
+    width: 100%;
+    height: auto;
+}
+
+.reviews img {
+    width: 100px;
+    margin: 5px 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navy);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.quantity.filled .cart-icon,
+.quantity.filled .add-text {
+    display: none;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

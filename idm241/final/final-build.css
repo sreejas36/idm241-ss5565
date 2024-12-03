@@ -15,6 +15,23 @@ body {
     align-items: center;
 }
 
+/* circles!! */
+
+.circle-container {
+    display: flex;
+    gap: 20px;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #8c8c8c;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+
 .category{
     background-color: var(--navy);
     border: 5px solid #004D99;
