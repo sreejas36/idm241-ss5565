@@ -84,6 +84,26 @@ body {
     opacity: 1;
 }
 
+.build-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+.build-container img{
+    width: 200px;
+}
+}
+.pumpkin {
+    margin: 30px auto 25px auto;
+    width: 147px;
+    height: auto;
+}
+
+.lip-gloss{
+    margin: 5px auto 5px auto;
+    width: 190px;
+    height: auto;
+}
+
 #selected-image {
     width: 200px;
     height: 200px;
@@ -210,6 +230,15 @@ li{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    .build-container{
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media (max-width: 1000px) {
+    .build-container{
+        grid-template-columns: repeat(2, 2fr);
+    }
 } 
 
 @media (max-width: 1220px) {
@@ -273,22 +302,28 @@ li{
 
 }
 .stars {
-    width: 110px;
+    width: 130px;
     height: 25px;
     text-align: center;
 }
-/* 
-.button-group {
-    display: flex;
-    justify-self: center;
-    inline-size: max-content;
-    width: 130px;
-    gap: 10px;
-    padding: 0 15px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: var(--navy);
-} */
+
+/* animating the numbers */
+.quantity-animate {
+    animation: scaleUp 0.2s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .button-group {
     display: flex;
@@ -298,7 +333,8 @@ li{
     margin: 10px;
     border-radius: 15px;
     background-color: var(--navy);
-    width: 130px; /* Set a fixed width to avoid jumping */
+    width: 130px;
+    height: 50px;
 }
 
 /* Button styles */
@@ -458,12 +494,3 @@ h4 {
 h5 {
     color: #000000;
 }
-
-@media (max-width: 667px) {
-    .container{
-        grid-template-columns: 1fr;
-    }
-    video {
-        width: 80vw
-    }
-} 
