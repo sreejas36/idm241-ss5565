@@ -266,6 +266,11 @@ li{
     margin: 30px;
 }
 
+.card:hover {
+    transition: border-color 0.3s ease;
+}
+
+
 .corrector {
     margin: auto;
     width: 147px;
