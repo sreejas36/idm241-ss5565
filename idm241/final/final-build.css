@@ -48,19 +48,39 @@ body {
 }
 
 .circle[data-color="1"] .circle-inner {
-    background-color: #f2e8e4; /* Light Beige */
+    background-color: #f2e8e4;
 }
 
 .circle[data-color="2"] .circle-inner {
-    background-color: #ead8a1; /* Warm Yellow */
+    background-color: #ead8a1;
 }
 
 .circle[data-color="3"] .circle-inner {
-    background-color: #d8dcc0; /* Soft Green */
+    background-color: #d8dcc0;
 }
 
 .circle[data-color="4"] .circle-inner {
-    background-color: #d6aa8b; /* Earthy Brown */
+    background-color: #d6aa8b; 
+}
+
+.circle[data-color="5"] .circle-inner {
+    background-color: #9FB7BF; 
+}
+
+.circle[data-color="6"] .circle-inner {
+    background-color: #C1838A; /* Warm Yellow */
+}
+
+.circle[data-color="7"] .circle-inner {
+    background-color: #C688B4; /* Soft Green */
+}
+
+.circle[data-color="8"] .circle-inner {
+    background-color: #CFD3E4; /* Earthy Brown */
+}
+
+.circle[data-color="9"] .circle-inner {
+    background-color: #E8A5B9; /* Earthy Brown */
 }
 
 .checkmark {
@@ -77,11 +97,15 @@ body {
     color: #fff;
     font-size: 16px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    transform: scale(0.1); /* Start slightly smaller */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
 .circle.selected .checkmark {
     opacity: 1;
+    visibility: visible;
+    transform: scale(1); /* Grow to full size */
 }
 
 .build-container{
@@ -91,6 +115,7 @@ body {
 .build-container img{
     width: 200px;
 }
+
 }
 .pumpkin {
     margin: 30px auto 25px auto;
@@ -104,7 +129,7 @@ body {
     height: auto;
 }
 
-#selected-image {
+#selected-image-1, #selected-image-2 {
     width: 200px;
     height: 200px;
     margin-top: 10px;
@@ -113,7 +138,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#selected-image.shown {
+#selected-image-1.shown, #selected-image-2.shown {
     transform: scale(1.1);
 }
 
@@ -127,6 +152,7 @@ body {
     margin: 10px;
     align-items: left;
     padding: 50px;
+    min-width: 80%;
 }
 
 .content-box {
@@ -184,11 +210,34 @@ img {
     background-color: var(--navy);
 }
 
-.container{
+.microinteraction{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.microinteraction-container{
     padding: 5px;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
 }
+/* .microinteraction-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+} */
+/* 
+.microinteraction-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow the cards to wrap to the next line */
+    /* justify-content: center; /* Center the cards */
+    /* gap: 20px; /* Space between cards */
+
+
 
 section {
     display: flex;
@@ -221,10 +270,12 @@ li{
 
 
 
+
 @media (max-width: 667px) {
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
+    .microinteraction-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .visuals {
         display: grid;
@@ -233,11 +284,23 @@ li{
     .build-container{
         grid-template-columns: 1fr;
     }
+    .category{
+        width: 80%;
+    }
 } 
 
 @media (max-width: 1000px) {
+    .microinteraction-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
     .build-container{
         grid-template-columns: repeat(2, 2fr);
+    }
+    .category{
+        width: 80%;
     }
 } 
 
@@ -255,11 +318,8 @@ li{
     height: 450px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    flex-wrap: wrap;*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;    
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
@@ -267,9 +327,9 @@ li{
 }
 
 .card:hover {
-    transition: border-color 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
 }
-
 
 .corrector {
     margin: auto;
@@ -355,6 +415,7 @@ li{
 .icon {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 /* Quantity display with cart icon and add text */
@@ -385,7 +446,7 @@ li{
 /* Disabled state styles */
 .button:disabled .icon {
     color: #ccc; /* Gray out the icon when disabled */
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Hide cart icon and add text when quantity > 0 */

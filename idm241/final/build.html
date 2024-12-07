@@ -45,7 +45,7 @@
     <section class="build">
         <div class="card">
             <!-- adjusting the image -->
-            <img id="selected-image" src="/assets/light-corrector.png" alt="Selected Image">
+            <img id="selected-image-1" src="/assets/light-corrector.png" alt="Color Corrector">
             <h4>CoverGirl Clean Fresh <br>Skincare Color Corr...</h4>
             <div class="circle-container">
                 <div class="circle selected" data-color="1" onclick="toggleCircle(this)">
@@ -89,22 +89,26 @@
     <section class="build">
         <div class="card">
             <!-- adjusting the image -->
-            <img id="selected-image" src="/assets/light-corrector.png" alt="Selected Image">
-            <h4>CoverGirl Clean Fresh <br>Skincare Color Corr...</h4>
+            <img id="selected-image-2" src="/assets/blue-polish.png" alt="Gel Polish">
+            <h4>Essie Gel Couture <br>Nail Polish</h4>
             <div class="circle-container">
-                <div class="circle selected" data-color="1" onclick="toggleCircle(this)">
+                <div class="circle selected" data-color="5" onclick="toggleCircle(this)">
                     <div class="circle-inner"></div>
                     <div class="checkmark">✓</div>
                 </div>
-                <div class="circle" data-color="2" onclick="toggleCircle(this)">
+                <div class="circle" data-color="6" onclick="toggleCircle(this)">
                     <div class="circle-inner"></div>
                     <div class="checkmark">✓</div>
                 </div>
-                <div class="circle" data-color="3" onclick="toggleCircle(this)">
+                <div class="circle" data-color="7" onclick="toggleCircle(this)">
                     <div class="circle-inner"></div>
                     <div class="checkmark">✓</div>
                 </div>
-                <div class="circle" data-color="4" onclick="toggleCircle(this)">
+                <div class="circle" data-color="8" onclick="toggleCircle(this)">
+                    <div class="circle-inner"></div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="circle" data-color="9" onclick="toggleCircle(this)">
                     <div class="circle-inner"></div>
                     <div class="checkmark">✓</div>
                 </div>
@@ -114,7 +118,7 @@
             <div class="reviews">
                 <img src="/assets/covergirl-stars.png" alt="5 stars" class="stars">
             </div>
-            <h4>$19.99</h4>
+            <h4>$14.49</h4>
 
             <div class="button-group">
                 <button id="minusButton" class="button minus" disabled>
@@ -158,88 +162,220 @@
     </section>
 </section>
 
-    <section class="container">
+<section class="microinteraction">
+    <h2>1. Product Card</h2>
+    <div class="microinteraction-container">
         <div class="category">
             <h3>TRIGGERS</h3>
             <ul class="info">
-                <li>Add Button Container</li>
-                    <ul>
-                        <li>Hover ON</li>
-                        <li>Hover OFF</li>
-                    </ul>
-                <li>Add Button Counter - Plus</li>
-                    <ul>
-                        <li>Hover ON</li>
-                        <li>Hover OFF</li>
-                        <li>Click ON</li>
-                    </ul>
-                <li>Add Button Counter - Minus</li>
-                    <ul>
-                        <li>Hover ON</li>
-                        <li>Hover OFF</li>
-                        <li>Click ON</li>
-                    </ul>
+                <li>Hover ON</li>
+                <li>Hover OFF</li>
             </ul>
         </div>
 
         <div class="category">
             <h3>RULES</h3>
             <ul class="info">
-                <li>Add Button Container</li>
+                <li>Hover ON</li>
                     <ul>
-                        <li>Hover ON</li>
-                            <ul>
-                                <li>Cursor changes to finger</li>
-                                <!-- <li>Button color inverts from navy blue to white with navy border</li> -->
-                                <li>Minus button is not clickable</li>
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                                <!-- <li>Button color reverts to original</li> -->
-                                <!-- <li>Minus Button remains at 60% opacity</li> -->
-                            </ul>
+                        <li>Card raises off the background, translating by 5 pixels</li>
+                        <li>Drop shadow increases by 20%</li>
                     </ul>
-                <li>Add Button Counter - Plus</li>
+                <li>Hover OFF</li>
                     <ul>
-                        <li>Hover ON</li>
-                            <ul>
-                                <li>Cursor changes to finger</li>
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                            </ul>
-                        <li>Click ON</li>
-                            <ul>
-                                <li>Item is added; cart database changes to n plus 1</li>
-                                <li>Item quantity increases by 1</li>
-                                <li>If item quantity is greater than 1</li>
-                                    <ul>
-                                        <!-- <li>Minus button goes back to 100% opacity</li> -->
-                                        <li>Item Quantity appears; Cart and Add Text disappears</li>
-                                    </ul>
-                            </ul>
+                        <li>Card moves down towards the background, translating by 5 pixels</li>
+                        <li>Drop shadow decreases back to normal</li>
                     </ul>
-                <li>Add Button Counter - Minus</li>
+        </div>
+
+        <div class="category">
+            <h3>FEEDBACK</h3>
+            <ul class="info">
+                <li>Hover ON</li>
                     <ul>
-                        <li>Hover ON</li>
+                        <li>Card raises off the background, translating by 5 pixels</li>
+                        <li>Drop shadow increases by 20%</li>
+                    </ul>
+                <li>Hover OFF</li>
+                    <ul>
+                        <li>Card moves down towards the background, translating by 5 pixels</li>
+                        <li>Drop shadow decreases back to normal</li>
+                    </ul>
+        </div>
+
+
+
+        <div class="category">
+            <h3>LOOPS &amp; MODES</h3>
+            <ul class="info">
+                <li>LOOPS</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+                <li>MODES</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+            <ul>
+        </div>
+    </div>
+</section>
+
+<section class="microinteraction">
+    <h2>2. Color Picker</h2>
+    <div class="microinteraction-container">
+        <div class="category">
+            <h3>TRIGGERS</h3>
+            <ul class="info">
+                <li>Default/Hover OFF</li>
+                <li>Hover ON</li>
+                <li>Click ON</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>RULES</h3>
+            <ul class="info">
+                <li>Default/Hover OFF</li>
+                <ul>
+                    <li>Cursor is normal</li>
+                </ul>
+                <li>Hover ON</li>
+                    <ul> 
+                        <li>Cursor changes to finger</li>
+                        <li>Outer circle opacity increases by 50%</li>
+                    </ul>
+                <li>Click</li>
+                    <ul>
+                        <li>Checkmark appears on clicked circle</li>
+                        <li>Product image switches to pertain to color picked</li>
+                    </ul>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>FEEDBACK</h3>
+            <ul class="info">
+                <li>Default/Hover OFF</li>
+                <ul>
+                    <li>Cursor is normal</li>
+                </ul>
+                <li>Hover ON</li>
+                    <ul> 
+                        <li>Cursor changes to finger</li>
+                        <li>Outer circle opacity increases by 50%</li>
+                    </ul>
+                <li>Click</li>
+                    <ul>
+                        <li>Checkmark appears on clicked circle</li>
+                        <li>Product image switches to pertain to color picked</li>
+                    </ul>
+            </ul>
+        </div>
+
+
+
+        <div class="category">
+            <h3>LOOPS &amp; MODES</h3>
+            <ul class="info">
+                <li>LOOPS</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+                <li>MODES</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+            <ul>
+        </div>
+    </div>
+</section>
+
+<section class="microinteraction">
+    <h2>3. Add Button Container</h2>
+    <div class="microinteraction-container">
+        <div class="category">
+            <h3>TRIGGERS</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                <li>Hover OFF</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>RULES</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                    <ul> 
+                        <li>Cursor changes to pointer</li>
+                        <!-- <li>Button color inverts from navy blue to white with navy border</li>
+                        <li>Minus Button is at 60% opacity</li> -->
+                    </ul>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>FEEDBACK</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                    <ul> 
+                        <li>Cursor changes to pointer</li>
+                        <!-- <li>Button color inverts from navy blue to white with navy border</li>
+                        <li>Minus Button is at 60% opacity</li> -->
+                    </ul>
+            </ul>
+        </div>
+
+
+
+        <div class="category">
+            <h3>LOOPS &amp; MODES</h3>
+            <ul class="info">
+                <li>LOOPS</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+                <li>MODES</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+            <ul>
+        </div>
+    </div>
+</section>
+
+<section class="microinteraction"></section>
+    <h2>4. Add Button Counter</h2>
+    <div class="microinteraction-container">
+        <div class="category">
+            <h3>TRIGGERS</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                <li>Hover OFF</li>
+                <li>Click ON</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>RULES</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes back to pointer</li>
+                    </ul>
+                <li>Click ON</li>
+                    <ul>
+                        <li>Item is added; cart database changes to n plus 1</li>
+                        <li>Item quantity increases by 1</li>
+                        <li>If item quantity is greater than 1</li>
                             <ul>
-                                <li>Cursor changes to finger</li>
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                            </ul>
-                        <li>Click ON</li>
-                            <ul>
-                                <li>Item is removed; cart database changes to n minus 1</li>
-                                <li>Item quantity decreases by 1</li>
-                                <li>If item quantity is less than 1</li>
-                                    <ul>
-                                        <li>Minus button goes back to 60% opacity</li>
-                                        <li>Item Quantity disappears; Cart and Add Text reappears</li>
-                                    </ul>
+                                <li>Minus button goes back to 100% opacity</li>
+                                <li>Item Quantity appears; Cart and Add Text disappears</li>
+                                <li>Minus button goes back to 100% opacity</li>
                             </ul>
                     </ul>
             </ul>
@@ -248,60 +384,22 @@
         <div class="category">
             <h3>FEEDBACK</h3>
             <ul class="info">
-                <li>Add Button Container</li>
+                <li>Hover ON</li>
                     <ul>
-                        <li>Hover ON</li>
-                            <ul>
-                                <li>Cursor changes to finger</li>
-                                <!-- <li>Button color inverts from navy blue to white with navy border</li> -->
-                                <li>Minus button is not clickable</li>
-                                <!-- <li>Minus Button is at 60% opacity after plus is clicked and it comes back to 0</li> -->
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                                <!-- <li>Button color reverts to original</li>
-                                <li>Minus Button remains at 60% opacity</li> -->
-                            </ul>
+                        <li>Cursor changes to finger</li>
                     </ul>
-                <li>Add Button Counter - Plus</li>
+                <li>Hover OFF</li>
                     <ul>
-                        <li>Hover ON</li>
-                            <ul>
-                                <li>Cursor changes to finger</li>
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                            </ul>
-                        <li>Click ON</li>
-                            <ul>
-                                <li>Item quantity increases by 1</li>
-                                <li>If item quantity is greater than 1</li>
-                                    <ul>
-                                        <li>Minus button goes back to 100% opacity</li>
-                                        <li>Item Quantity appears; Cart and Add Text disappears</li>
-                                    </ul>
-                            </ul>
+                        <li>Cursor changes back to pointer</li>
                     </ul>
-                <li>Add Button Counter - Minus</li>
+                <li>Click ON</li>
                     <ul>
-                        <li>Hover ON</li>
+                        <li>Item quantity increases by 1</li>
+                        <li>If item quantity is greater than 1</li>
                             <ul>
-                                <li>Cursor changes to finger</li>
-                            </ul>
-                        <li>Hover OFF</li>
-                            <ul>
-                                <li>Cursor changes back to pointer</li>
-                            </ul>
-                            <li>Click ON</li>
-                            <ul>
-                                <li>Item quantity decreases by 1</li>
-                                <li>If item quantity is less than 1</li>
-                                    <ul>
-                                        <li>Minus button goes back to 60% opacity</li>
-                                        <li>Item Quantity disappears; Cart and Add Text reappears</li>
-                                    </ul>
+                                <li>Minus button goes back to 100% opacity</li>
+                                <li>Item Quantity appears; Cart and Add Text disappears</li>
+                                <li>Minus button goes back to 100% opacity</li>
                             </ul>
                     </ul>
             </ul>
@@ -322,9 +420,88 @@
                 </ul>
             <ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    
+
+<section class="microinteraction"></section>
+    <h2>5. Minus Button Counter</h2>
+    <div class="microinteraction-container">
+        <div class="category">
+            <h3>TRIGGERS</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                <li>Hover OFF</li>
+                <li>Click ON</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>RULES</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes back to pointer</li>
+                    </ul>
+                <li>Click ON</li>
+                    <ul>
+                        <li>Item is removed; cart database changes to n minus 1</li>
+                        <li>Item quantity decreases by 1</li>
+                        <li>If item quantity is less than 1</li>
+                            <ul>
+                                <li>Minus button goes back to 60% opacity</li>
+                                <li>Item Quantity disappears; Cart and Add Text reappears</li>
+                            </ul>
+                    </ul>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>FEEDBACK</h3>
+            <ul class="info">
+                <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes back to pointer</li>
+                    </ul>
+                <li>Click ON</li>
+                    <ul>
+                        <li>Item quantity decreases by 1</li>
+                        <li>If item quantity is less than 1</li>
+                            <ul>
+                                <li>Minus button goes back to 60% opacity</li>
+                                <li>Item Quantity disappears; Cart and Add Text reappears</li>
+                            </ul>
+                    </ul>
+            </ul>
+        </div>
+
+
+
+        <div class="category">
+            <h3>LOOPS &amp; MODES</h3>
+            <ul class="info">
+                <li>LOOPS</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+                <li>MODES</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+            <ul>
+        </div>
+    </div>
+</section>
+
+
     <h3>By: Sreeja Satish</h3>
 
     <script src="final-build.js"></script>
