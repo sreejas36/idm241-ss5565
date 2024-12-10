@@ -5,19 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDM 241 Case Study</title>
     <link rel="shortcut icon" type="image/png" href="/assets/cvs-favicon.png">
-    <link rel="stylesheet" href="final-build.css">
+    <link rel="stylesheet" href="/css/casestudy.css">
 </head>
 <body>
 
 <header class="main">
-    <h1>IDM 241 Case Study</h1>
-    <h2>    
-        <a href="https://www.cvs.com/shop" target="_blank" class="link">CVS Item Discovery</a>
-    </h2>
     <img src="/assets/CVS_Logo.png" alt="CVS_Logo" width="200px">
+    <h1>Redesigning and Developing <a href="https://www.cvs.com/shop" target="_blank" class="link">CVS</a> Product Cards</h1>
+    <h2>A Microinteractions Project Using HTML, CSS, and JavaScript</h2>
+    <a href="https://sreejacsatish.netlify.app/idm241/final/build" target="_blank">
 </header>
 
+<div class="hero">
+        <img src="/assets/hero-image.png" alt="Hero Image">
+    </a>
+</div>
+
+<section class="case-study-sections">
+    <div>
+        <h2>Overview</h2>
+        <p>Microinteractions have proved to be an essential piece of UX Design, often being the element that improves design and keeps users coming back.</p>
+    </div>
+
+    <div>
+        <h2>Context and Challenge</h2>
+            <h3>Background</h3>
+                <p>CVS is an American retail store, offering its shopping and healthcare services to people across the United States. Though it maintains its reliable presence in its physical stores, the CVS website still has to improve on a few elements in order to increase user satisfaction and reduce confusion.
+                </p>
+            <h3>The Problem</h3>
+                <p>When users navigate the CVS site and come across a product card, they are able to view basic information about a product and add it to their cart. When clicking the Add button, however, they are met with an animation that may increase frustration:</p>
+                <p>After clicking the Add button there is feedback to show that the product is added, but after 3 seconds, the Add button reverts to its original state.</p>
+                <p>Though the overall flow was fleshed out, the lack of feedback regarding how many products were added to the cart proved to cause frustration and confusion. When I was testing the site, I unknowingly added my test product to my cart 40 times. Since there was no numerical feedback to show how many products were added to the cart, this caused frustration and needed to be addressed and changed.</p>
+                <video src="/assets/CVS_Add_Button.mp4" controls>Initial Card </video>
+                <!-- <p>When users navigate the CVS site and come across a product card, they are met with an image, product name, and a price, as well as other elements like reviews in order to persuade the user to purchase the product. Nestled at the bottom of the card is an Add button, prompting the user to click it and add a product to their basket. When clicking, </p>
+                <p>When trying to find a suitable website for this project, I came across the CVS site and fell victim to its product cards, which were confusing to navigate.</p>
+                <p>The CVS product cards page </p> -->
 
 
+            <h3>Goals and Objectives</h3>
+                <p>The success of this project was defined by iterative improvements to the CVS interface, implementing smooth animations and visual interest so that the user could navigate the site with full freedom.</p>
+                <p>The main goals I had for this project were to improve the Add button, but I expanded this to cover and implement the:</p>
+                <ol>
+                    <li>Overall Product Card</li>
+                    <li>Color Picker</li>
+                    <li>Add Button Container</li>
+                    <li>Add Counter</li>
+                    <li>Minus Counter</li>
+                </ol>
+            <h3>Timeline</h3>
+                <!-- <div class="assignment-container">
+                    <button>Alpha Build</button>
+                    <button>Beta Build</button>
+                    <button>Final Build</button>
+                </div> -->
+                <p>Throughout this 10 week course, I worked to improve the CVS product page by implementing my own HTML, CSS, and JavaScript through feedback from my professor and peers.</p>
+                <p>The project was divided into Alpha, Beta, and Final phases, where we could research, design, and develop interactions iteratively into a cohesive final project.</p>
+                <p>In order to delve deep into microinteractions and embody their importance in my project, I highlighted the Triggers, Rules, Feedback, and Loops & Modes for each point in my redesign.</p>
+        </div>
+
+    <div>
+        <h2>Process and Insight</h2>
+        <div>
+            <h3>Alpha</h3>
+            <a href="https://sreejacsatish.netlify.app/idm241/alpha">Link to Alpha</a>
+            <a href="https://sreejacsatish.netlify.app/idm241/alpha/build">Link to Alpha Build</a>
+    
+            <p>In this phase, I focused on the main component of my redesign, the Add button. The main deliverable for this stage was a recreation of the current CVS site component. In this, I mapped out the Triggers, Rules, Feedback, Loops, and Modes of the current site, and sought to develop those into a functional prototype. I implemented the hover states and feedback with CSS and JavaScript. </p>
+            <video src="/assets/alpha-build-recording.mov" controls></video>
+        </div>
+        <div>
+            <h3>Beta</h3>
+            <a href="https://sreejacsatish.netlify.app/idm241/beta">Link to Beta</a>
+            <a href="https://sreejacsatish.netlify.app/idm241/beta/build">Link to Beta Build</a>
+    
+            <p>The Beta is where things were taken to the next level. In this stage, we were able to implement changes that we felt would take the interface to the next level. Since one of my pain points for the original CVS interface was the lack of feedback to show how many products were added to the cart, I wanted to tackle this by improving the counter.</p>
+            <div class="visuals">
+                <div class="images">
+                    <h3>1. Add Button ContainerBefore Hover</h3>
+                    <img src="/assets/add_button-default.png" alt="add button default">
+                </div>
+                <div class="images">
+                    <h3>2. Add Button On Hover</h3>
+                    <img src="/assets/add_button-hover.png" alt="add button hover">
+                </div>
+                <div class="images">
+                    <h3>3. Add Button Hover On Plus</h3>
+                    <img src="/assets/add_button-hover_on_plus.png" alt="plus button hover">
+                </div>
+                <div class="images">
+                    <h3>4. Add Button Click On Plus</h3>
+                    <img src="/assets/add_button-click_on_plus.png" alt="plus button click">
+                </div>
+                <div class="images">
+                    <h3>5. Add Button Hover On Minus</h3>
+                    <img src="/assets/add_button-hover_on_minus.png" alt="minus button hover">
+                </div>
+                <div class="images">
+                    <h3>6. Add Button Click On Minus</h3>
+                    <img src="/assets/add_button-click_on_minus.png" alt="minus button click">
+                </div>
+            </div>
+            <video src="/assets/beta-build-recording.mov" controls></video>
+        </div>
+        <div>
+            <h3>Final</h3>
+            <a href="https://sreejacsatish.netlify.app/idm241/final">Link to Final</a>
+            <a href="https://sreejacsatish.netlify.app/idm241/final/build">Link to Final Build</a>
+    
+            <p>When prepping for my Final Build, I thought about what other elements I would like to see on the product card. When searching up skincare products, I found that certain products had variations with their colors and attributes. Because of this, I decided to adjust the color picker shown on the initial card. Instead of a confusing interface, I chose to simplify the color choices and incorporate into the simple and smooth design of my redesigned card. </p> 
+                <img src="/assets/original-color-picker.png" alt="Original Color Picker">
+    </div>
+
+    <div>
+        <h3>The Solution</h3>
+        <p>The culmination of this project came after combining the elements of the final into a grid of 4 cards that would showcase their individual products. I chose to add another product with color variations, and coded the project so they would work independently of each other. I incorporated smooth animations in between the image switches, checkmark, and number counter. The final build turned into the one stop shop for users to find crucial information about the product, choose their specifications, and add it to cart. </p> 
+        <video src="/assets/final-build-recording.mov" controls></video>
+    </div>
+
+    <div>
+        <h2>The Results and Reflection</h2>
+            <p>I felt like this project was very valuable to me, because I was able to see my growth step by step throughout it.</p>
+            <p>This project is something I'd continue if I had extra time. Ideally, I would continue making microinteractions, in order to make my project look and feel more like the CVS interface, where you can continue checking out with the product you select.</p>
+            <p>I'd like to make a component where when the plus button is clicked on a card, a cart icon animates and increases the count of items in it. I feel like any additions I would make would ultimately round out the project.</p>
+            <p>I'm excited to see where this goes, and see how I can do better next time!</p>
+    </div>
+
+</section>
+
+<h3> © 2024 By Sreeja Satish</h3>
 </body>
 </html>
