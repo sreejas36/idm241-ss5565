@@ -150,9 +150,7 @@ body {
     border-radius: 20px;
     /* display: grid; */
     margin: 10px;
-    align-items: left;
-    padding: 50px;
-    min-width: 80%;
+    padding: 5%;
 }
 
 .content-box {
@@ -178,6 +176,7 @@ h2 {
     font-family: var(--montserrat);
     color: #CC0000;
     font-size: 40px;
+    text-align: center;
 } 
 
 h3 {
@@ -282,14 +281,14 @@ li{
         grid-template-columns: repeat(1, 1fr);
     }
     .build-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
     }
     .category{
         width: 80%;
     }
 } 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .microinteraction-container{
         display: flex;
         flex-direction: column;
@@ -400,23 +399,20 @@ li{
     background-color: var(--navy);
     width: 130px;
     height: 50px;
-    border: 2px solid var(--white); 
+    border: 2px solid var(--navy);
+    color: var(--white);
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--navy);
+    color: white;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.3s ease;
 }
 
-/* Add hover effects to the button group */
 .button-group:hover {
-    background-color: var(--white); /* Invert the background */
-    color: var(--navy); /* Invert the text color */
-    border: 2px solid var(--navy); /* Add a border for better visibility */
-}
+    transform: scale(1.1);
 
-/* Invert icons and text colors when button group is hovered */
-.button-group:hover .icon {
-    filter: invert(1); /* Invert icon colors */
-}
-
-.button-group:hover .add-text {
-    color: var(--navy); /* Change text color */
 }
 
 /* Disabled state styles */
@@ -425,21 +421,20 @@ li{
     opacity: 0.5; /* Reduce opacity */
     cursor: not-allowed; /* Change cursor */
 }
-.minus, .plus {
-    width: 2rem;
-    height: 2rem;
+/* .minus, .plus {
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: #003399; /* Blue color for icons */
-    border: 2px solid #003399;
+    color: #003399; 
+    border: 1px solid #003399;
     cursor: pointer;
-}
+} */
 
 .minus:hover, .plus:hover {
-    background-color: #003399; /* Invert: Blue background */
     color: white; /* Invert: White icon */
 }
 
@@ -447,7 +442,7 @@ li{
 .cart-icon {
     width: 1.5rem;
     height: auto;
-    fill: #003399; /* Default blue cart color */
+    fill: var(--white); /* Default blue cart color */
     transition: fill 0.3s ease; /* Smooth transition for color */
 }
 
@@ -457,9 +452,8 @@ li{
 
 /* "Add" Text */
 .add-text {
-    color: #003399; /* Default blue text */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition */
+    color: var(--white);
+    font-weight: 100;
 }
 
 .add-text:hover {
@@ -472,7 +466,6 @@ li{
 .button {
     background-color: var(--navy);
     border: none;
-    cursor: pointer;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -484,28 +477,12 @@ li{
     cursor: pointer;
 }
 
-/* Quantity display with cart icon and add text */
-/* .quantity {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 16px;
-} */
-
-/* .quantity {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center content */
-    /* gap: 5px; */
-    /* font-size: 16px; */
-    /* flex: 1; Ensure it takes up available space */
-
-
 .quantity {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Adjust this to match the width needed */
+    gap: 5px;
+    width: 50px;
     text-align: center;
 }
 
