@@ -77,6 +77,10 @@ h3 {
     box-sizing: border-box;
 }
 
+img{
+    text-align: center;
+}
+
 .images {
     width: 100%;
     max-width: 100%;
