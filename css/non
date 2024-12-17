@@ -97,3 +97,168 @@ h3{
     }
 
 }
+
+
+
+:root {
+    --white: #FFFFFF;
+    --navy: #004D99;
+    --red: #CC0000;
+    --black: #000000;
+    --montserrat: 'montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    margin: 0;
+    font-size: 16px; /* Base font size for scaling */
+}
+
+body {
+    color: var(--navy);
+    font-family: var(--montserrat);
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+}
+
+.main {
+    color: #CC0000;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.case-study-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adding some margin between sections */
+}
+
+h1, h2 {
+    color: #CC0000;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem; /* Responsive font size */
+}
+
+h3 {
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+/* Visuals Section */
+.visuals {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
+    place-items: center;
+    margin: 20px auto; /* Center the grid container */
+    padding: 0 10px; /* Prevents overflow */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.visuals {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
+    place-items: center;
+    margin: 20px auto; /* Center the grid container */
+    padding: 0 10px; /* Prevent side overflow */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+img{
+    text-align: center;
+}
+
+.images {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.small-video {
+    width: 100%; /* Ensures video scales responsively */
+}
+
+.video {
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        margin: 0 5%;
+    }
+
+    .hero img {
+        max-width: 100%; /* Makes sure the hero image scales responsively */
+        height: auto;
+    }
+
+    .visuals {
+        grid-template-columns: repeat(1, 1fr); /* Adjusts to two columns on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjusting the heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Smaller font size for h2 */
+    }
+
+    h3 {
+        font-size: 1.25rem; /* Adjusting h3 for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1rem; /* Adjust for small screens */
+    }
+
+    h3 {
+        font-size: 1rem; /* Adjust for small screens */
+    }
+
+    .main h1 {
+        font-size: 1.25rem; /* Adjust main title size */
+    }
+
+    .case-study-sections {
+        padding: 0 15px; /* Adjust padding for small screens */
+    }
+    .visuals {
+        grid-template-columns: repeat(1, 1fr); /* Adjusts to two columns on smaller screens */
+    }
+}
+
+.visuals {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
+    place-items: center;
+    margin: 20px auto; /* Center the grid container */
+    padding: 0 10px; /* Prevent side overflow */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .visuals {
+        grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 cards in a row */
+    }
+}

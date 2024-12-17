@@ -9,24 +9,42 @@
 html {
     margin: 0;
     font-size: 16px; /* Base font size for scaling */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
     color: var(--navy);
     font-family: var(--montserrat);
+    margin: 0 auto; /* Center content horizontally */
+    max-width: 1200px; /* Limits body width on larger screens */
+    padding: 0 15px; /* Adds side padding */
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 10%;
+    margin: 20px 0;
 }
 
 .hero {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
 }
 
 .main {
-    color: #CC0000;
-    align-items: center;
+    color: var(--red);
     text-align: center;
     margin-top: 5%;
 }
@@ -35,128 +53,105 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Adding some margin between sections */
+    margin-bottom: 20px; /* Adding spacing between sections */
 }
 
-h1, h2 {
-    color: #CC0000;
-}
-
-h3, h4 {
+h1, h2, h3 {
+    margin: 10px 0;
     text-align: center;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h2 {
-    font-size: 1.75rem; /* Responsive font size */
+    font-size: 1.75rem;
 }
 
 h3 {
-    font-size: 1.5rem; /* Responsive font size */
+    font-size: 1.5rem;
 }
 
 /* Visuals Section */
 .visuals {
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    margin: 20px auto; /* Center the grid container */
-    padding: 0 10px; /* Prevents overflow */
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.visuals {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
-    place-items: center;
-    margin: 20px auto; /* Center the grid container */
-    padding: 0 10px; /* Prevent side overflow */
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-img{
-    text-align: center;
+    margin: 20px 0;
+    padding: 0;
 }
 
 .images {
     width: 100%;
-    max-width: 100%;
     text-align: center;
 }
 
+.center-image{
+    place-items: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin: 0; /* Remove default margins */
+}
+
 .small-video {
-    width: 100%; /* Ensures video scales responsively */
+    width: 50%; /* Adjust size as needed */
 }
 
-.video {
-    width: 100%;
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .visuals {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     body {
-        margin: 0 5%;
+        margin: 0;
+        padding: 0 10px; /* Reduce side padding */
     }
 
     .hero img {
-        max-width: 100%; /* Makes sure the hero image scales responsively */
-        height: auto;
+        width: 100%; /* Scales hero image */
     }
 
     .visuals {
-        grid-template-columns: repeat(1, 1fr); /* Adjusts to two columns on smaller screens */
+        grid-template-columns: 1fr; /* Stack visuals into 1 column */
     }
 
     h1 {
-        font-size: 1.5rem; /* Adjusting the heading size for smaller screens */
+        font-size: 1.75rem;
     }
 
     h2 {
-        font-size: 1.25rem; /* Smaller font size for h2 */
+        font-size: 1.5rem;
     }
 
     h3 {
-        font-size: 1.25rem; /* Adjusting h3 for smaller screens */
+        font-size: 1.25rem;
     }
 }
 
 @media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
     h2 {
-        font-size: 1rem; /* Adjust for small screens */
+        font-size: 1.25rem;
     }
 
     h3 {
-        font-size: 1rem; /* Adjust for small screens */
-    }
-
-    .main h1 {
-        font-size: 1.25rem; /* Adjust main title size */
+        font-size: 1.1rem;
     }
 
     .case-study-sections {
-        padding: 0 15px; /* Adjust padding for small screens */
-    }
-    .visuals {
-        grid-template-columns: repeat(1, 1fr); /* Adjusts to two columns on smaller screens */
-    }
-}
-
-.visuals {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
-    place-items: center;
-    margin: 20px auto; /* Center the grid container */
-    padding: 0 10px; /* Prevent side overflow */
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-@media (max-width: 1024px) {
-    .visuals {
-        grid-template-columns: repeat(2, 1fr); /* Medium screens: 2 cards in a row */
+        padding: 0 10px; /* Add slight padding for smaller screens */
     }
 }
